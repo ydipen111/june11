@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      .bx1 {
+        background-color: red;
+      }
+
+      .bx2 {
+        background-color: blue;
+      }
+
+      .bx3 {
+        background-color: purple;
+      }
+
+      .bx4 {
+        background-color: yellowgreen;
+        /* flex-grow: 1; */
+      }
+
+      .bx5 {
+        background-color: steelblue;
+        flex-shrink: 2;
+        /* flex-grow: 2 */
+      }
+
+      .item {
+        /* flex-grow: 2; */
+        width: 200px;
+      }
+
+      .bx {
+        width: 450px;
+        display: flex;
+        flex-wrap: wrap;
+        /* height: 300px; */
+        border: 1px solid black;
+        gap: 10px;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: start;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="bx">
+      <div class="bx1 item">
+        <h3>Bx1</h3>
+
+      </div>
+      <div class="bx2 item">
+        <h3>Bx2</h3>
+      </div>
+      <div class="bx3 item">
+        <h3>Bx3</h3>
+      </div>
+      <div class="bx4 item">
+        <h3>Bx4</h3>
+      </div>
+      <div class="bx5 item">
+        <h3>Bx5</h3>
+      </div>
+
+    </div>
+
+
+
+
+
+  </body>
+
+</html>

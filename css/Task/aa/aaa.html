@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .div {
+        display: grid;
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: repeat(3, 200px);
+        gap: 40px;
+        padding: 0px;
+        width: auto;
+        height: auto;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+      }
+
+      .item {
+        font-size: medium;
+        height: 200px;
+        display: grid;
+      }
+
+      .div1 {
+        background-color: rgb(0, 255, 0);
+        display: grid;
+        grid-row: 1/4;
+        /* grid-column-start:; */
+        /* Span full width of the grid */
+        /* grid-auto-rows: 1/4; */
+
+      }
+
+      .div2 {
+        background-color: rgb(0, 255, 0);
+        /* grid-column: 1 / 2; */
+        /* Span 2 columns */
+        grid-column: 2/ 4;
+        /* Span 2 rows */
+      }
+
+      .div3 {
+        background-color: rgb(184, 51, 11);
+      }
+
+      .div4 {
+        background-color: rgb(255, 238, 0);
+      }
+
+      .div5 {
+        background-color: rgb(255, 106, 80);
+      }
+
+      .div6 {
+        background-color: rgb(183, 0, 255);
+        /* grid-column: 3 / 5; */
+        /* Span 2 columns */
+        grid-row: 2 / 4;
+      }
+
+      .div7 {
+        background-color: rgb(9, 255, 0);
+      }
+
+      .div8 {
+        background-color: rgb(139, 39, 39);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="divv">
+      <div class="div1 item">box1</div>
+      <div class="div2 item">box2</div>
+      <div class="div3 item">box3</div>
+      <div class="div4 item">box4</div>
+      <div class="div5 item">box5</div>
+      <div class="div6 item">box6</div>
+      <div class="div7 item">box7</div>
+      <div class="div8 item">box8</div>
+    </div>
+  </body>
+
+</html>
