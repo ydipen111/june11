@@ -88,6 +88,8 @@
         font-style: normal;
       }
 
+
+
       .Surface {
         padding-top: 8rem;
       }
@@ -110,11 +112,71 @@
         display: flex;
         flex: row;
         justify-content: space-evenly;
+        /* box-shadow: 1px 1px 2px black; */
+        gap: 2rem;
+        padding-top: 2rem;
+
+
+        padding-bottom: 2rem;
       }
 
       .Product1 {
         width: 1/4;
+        padding: 10px;
+        box-shadow: 1px 1px 2px;
+
       }
+
+      .Productii {
+        transition: transform 0.5s ease-in-out;
+
+      }
+
+      .Product1:hover {
+        background-color: rgb(171, 170, 170);
+        color: white;
+        transform: scale(1.2);
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .productD {
+        font-family: sans-serif;
+        padding: 10px 10px 10px 0px;
+      }
+
+      .ProductLink {
+        cursor: pointer;
+      }
+
+      .Xbox {
+        display: flex;
+        background-image: url('./assets//xbox.png');
+        height: 352px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: full;
+        background-size: cover;
+
+
+      }
+
+
+
+      .Xxbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+      }
+
+      .xboxp {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+
+
 
       @media(max-width:1024px) {
         .NavLink {
@@ -122,7 +184,26 @@
         }
       }
 
+      @media (max-width:1000px) {
+        .product {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: auto;
+        }
+      }
+
       @media(max-width:762px) {
+
+        .product {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: auto;
+        }
+
+        /* .Product1:nth-child(4) {
+          grid-column: span 3;
+        } */
+
         .NavLink {
           display: none;
         }
@@ -144,10 +225,16 @@
         }
       }
 
-      @media(max-width:1024px) {
-        .NavLink {
-          /* display: none; */
+      @media(max-width:624px) {
+        .product {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: auto;
         }
+
+        /* .Product1:nth-child(4) {
+          grid-column: span 3;
+        } */
       }
     </style>
   </head>
@@ -197,25 +284,85 @@
 
       <div class="product">
         <div class="Product1">
-          <img src="" alt="">
-          <h1></h1>
-          <h3></h3>
-          <p><a href=""></a></p>
+          <img class="Productii" src="./assets/card1.png" alt="">
+          <h3>New Surface Pro 7</h3>
+          <p class="productD">
+            See how Katie Sowers, Asst. Coach for the 49ers, uses Surface Pro 7 to put her plans into play.</p>
+          <p class="ProductLink"><a href=""></a>
+            LEARN MORE</p>
         </div>
+        <div class="Product1">
+          <img src="./assets/card2.png" alt="">
+          <h3>
 
-
-        <div class="Product1">box2</div>
-        <div class="Product1">box3</div>
-        <div class="Product1">box4</div>
-
-
-
+            Surface Laptop 3
+          </h3>
+          <p class="productD">
+            Express yourself powerfully with a thin, light, and elegant design, faster performance, and up to 11.5 hours
+            battery</p>
+          <p class="ProductLink"><a href=""></a>
+            LEARN MORE</p>
+        </div>
+        <div class="Product1">
+          <img src="./assets/card3.png" alt="">
+          <h3>
+            Xbox One X</h3>
+          <p class="productD">
+            Buy an Xbox One X console and double your fun with a free select extra controller. Starting at $349..</p>
+          <p class="ProductLink"><a href=""></a>
+            LEARN MORE</p>
+        </div>
+        <div class="Product1">
+          <img src="./assets/card4.png" alt="">
+          <h3>
+            Microsoft Edge</h3>
+          <p class="productD">
+            The new Microsoft Edge
+            Expect more. World class performance, with more privacy, more productivity, and more value.</p>
+          <p class="ProductLink"><a href=""></a>
+            LEARN MORE</p>
+        </div>
       </div>
-      <div>bg</div>
+
+
+      <div>
+
+        <div class="Xbox">
+          <div class="Xxbox">
+            <div>
+              <h2 class="">
+
+                Xbox Game Pass Ultimate</h2>
+              <p class="xboxp">
+                Xbox Game Pass Ultimate Xbox Live Gold and over 100 high-quality console and PC games. Play<br>
+                together
+                with
+                friends and
+                discover your next favorite game.
+              </p>
+
+              <button class="Msbodybutton">
+
+                Join Now
+
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     </main>
-    <footer></footer>
+    <footer
+      style="background-color: rgb(137, 103, 238); color:white heigt:2rem width: font:larger; full; padding:2rem; ">
+      <i>
+        A Copyright Notice deters people from copying your work and distributing it as their own. It also puts people on
+        notice that you have rights under copyright law, and you plan on enforcing them.
+      </i>
+
+
+
+    </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -224,13 +371,16 @@
 
       const rev = ScrollReveal({
         distance: '20%',
-        delay: 200
+        delay: 200,
+        scale: 0.85
       });
 
       console.log(rev);
 
       rev.reveal('.Imglogo', { origin: 'left' });
-      rev.reveal('.Link', { origin: 'top' })
+      rev.reveal('.Link', { origin: 'top' });
+
+      rev.reveal('.Xbox', { interval: 500, origin: 'left' })
 
 
 
