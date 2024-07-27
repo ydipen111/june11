@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 13px;
+        margin: 20px 0;
+      }
+
+      article p {
+        padding: 10px 05px 10px 05px
+      }
+
+      .product-info {}
+
+      .animation {
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+        transition: all 1s ease-in;
+      }
+
+      .animation:hover {
+        transform: translatey(200px);
+        width: 400px;
+        background-color: pink;
+        border-radius: 50%;
+        rotate: 50deg;
+        transition: all 2s ease-in;
+
+      }
+
+      .transImg {
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        overflow: hidden;
+        transition: all 1s ease-in;
+      }
+
+      .transImg img:hover {
+        transform: scale(5);
+        height: 100%;
+
+        /* rotate: 50deg; */
+
+      }
+
+      .bb {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .bb .learn:hover {
+        background-color: aqua;
+        margin-right: 10px;
+
+      }
+
+      .bb.learn {
+        transition: all 500ms ease-in 0s;
+      }
+
+      .bb.icon {
+        transform: all 500mx ease-in 0s;
+      }
+
+
+      .bb .icon:hover {
+        background-color: aqua;
+        margin-right: 60px;
+
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="bb">
+      <div class="learn">
+        <h2>LEARN MOREOKZ</h2>
+      </div>
+
+      <div class="icon">
+        <i class="fa fa-car"></i>
+      </div>
+    </div>
+
+    </div>
+    <div class="transImg">
+      <img class="" src="./card2.png" alt="">
+    </div>
+    <section>
+      <artice>
+        <img src="./card1.png" alt="">
+        <div class="product-info">
+          <h1>hello word</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nam impedit, sed asperiores fugiat
+            modi a magni architecto voluptas, nesciunt, quos corrupti! Explicabo voluptatum nemo esse possimus sint non
+            qui!</p>
+          <div class="animation"></div>
+        </div>
+      </artice>
+
+      <artice><img src="./card3.png" alt="">
+        <div class="product-info">
+          <h1>hello word</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nam impedit, sed asperiores fugiat
+            modi a magni architecto voluptas, nesciunt, quos corrupti! Explicabo voluptatum nemo esse possimus sint non
+            qui!</p>
+        </div>
+      </artice>
+      <artice><img src="./card2.png" alt="">
+        <div class="product-info">
+          <h1>hello word</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nam impedit, sed asperiores fugiat
+            modi a magni architecto voluptas, nesciunt, quos corrupti! Explicabo voluptatum nemo esse possimus sint non
+            qui!</p>
+        </div>
+      </artice>
+      <artice><img src="./card3.png" alt="">
+        <div class="product-info">
+          <h1>hello word</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nam impedit, sed asperiores fugiat
+            modi a magni architecto voluptas, nesciunt, quos corrupti! Explicabo voluptatum nemo esse possimus sint non
+            qui!</p>
+        </div>
+      </artice>
+      <div>
+
+      </div>
+
+    </section>
+
+  </body>
+
+</html>
